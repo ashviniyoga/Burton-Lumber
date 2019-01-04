@@ -1,0 +1,283 @@
+/*Colors
+navy: #324368
+white: #fff
+grey: #787878
+gold: #b3903f
+
+Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald:600|Raleway');
+font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+Header Sizes
+h1: 5.8em/70pt, oswald, semi-bold, white
+h2: 3.3em/40pt, oswald, semi-bold, navy
+h3: 2.9em/35pt, oswald, semi-bold, grey
+*/
+
+/* 
+    ************
+    RESET STYLES
+    ************
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:600|Raleway');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    *******************
+    MAIN CONTENT STYLES
+    *******************
+*/
+
+body {
+    width: 100%;
+    min-width: 220px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+    line-height: 1.8;
+    max-width: 1200;
+    display: -ms-flexbox;
+    display: flex; 
+    justify-content:space-between;
+}
+nav {
+    margin-top:12em;
+    margin-bottom:-4px;
+    text-align: center;
+    margin-left: 80px;
+}
+nav li {
+       list-style-type: none;
+       text-align: center;
+       display: inline-flex;
+    
+}
+nav a {
+    background-color: #324368;
+    color: #fff;
+    font-size: 21px;
+    text-decoration: none;
+    display: inline;
+    margin-right: 1.2em;
+    text-align: center;
+    padding:0 1.5em;
+    line-height: 1.6;
+    border-radius:6px;
+    }
+nav a:hover {
+    background-color: #f05257;
+    color: #fffaee;
+}
+nav li:last-child{
+      text-align: right;
+    }
+#search{
+    border:solid 2px #787878;
+    border-radius: 7px;
+    height:28px;
+    margin-top:9em;;
+}
+.fa-search{
+    margin-top:-1em;;
+    margin-left:-25px;
+}
+
+
+section {
+    margin-bottom: 1em;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600; /* semi bold */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.3em;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2em;
+    color: #324368;
+}
+
+h3 {
+    font-size: 1.7em;
+    color: #787878;
+}
+
+h4 {
+    font-size: 1.8em;
+    color: #aaa;
+    text-align: center;
+}
+
+.embed {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.services .embed {
+    color: rgba(255, 255, 255, 0.75);
+    top: 0.5em;
+    width: 100%;
+}
+
+.embed h1 {
+    text-transform: none;
+}
+
+.hero .embed {
+    width: 40%;
+    top: 2em;
+    left: 2em;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+section div {
+    margin: 0 auto;
+    position: relative;
+}
+
+.featured-products, .services {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.featured-products div, .services div {
+    margin-bottom: 1em;
+}
+
+/* bxslider styles */
+
+.bx-wrapper {
+    border-width: 0;
+}
+
+.bx-controls-auto {
+    display: none;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+/* magnify styles */
+
+.magnify:hover {
+    cursor: zoom-in;
+}
+
+.magnify img {
+    max-width: 500px;
+}
+
+/*Footer style for all the web pages is same*/
+footer{
+    margin-top:2.25em;         
+}
+footer p{
+   background-color: #324368;
+    color:#fff;
+    text-align: center;
+    line-height: 4.3em;
+}
+
+/*
+    ***************
+    MID SIZE SCREEN
+    ***************
+*/
+
+@media screen and (min-width: 650px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin: 0.2em 0 1em;
+    }
+    
+    .featured-products, .services {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+/*
+    *****************
+    LARGE SIZE SCREEN
+    *****************
+*/
+
+@media screen and (min-width: 1100px) {
+    h1 {
+        font-size: 5.8em;
+    }
+
+    h2 {
+        font-size: 2.9em;
+    }
+
+    h3 {
+        font-size: 2.2em;
+    }
+}
